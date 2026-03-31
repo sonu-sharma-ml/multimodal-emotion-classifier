@@ -9,6 +9,7 @@ A premium, Streamlit-based web application for detecting and classifying multipl
 - **Session History**: Easily review your past analyses and their predicted emotions within a single session.
 - **Premium Dark UI**: A visually stunning, modern glassmorphic interface that responds dynamically to user interactions.
 - **Real-Time Confidence**: View precise probability scores distribution for each detected emotion category.
+- **Face Detection (Beta)**: Includes a MediaPipe-powered real-time face detection module (`face_detection_new_api.py`) for visual modality exploration.
 
 ## 🎭 Supported Emotions
 
@@ -47,8 +48,10 @@ multimodal-emotion-classifier/
 ├── utils.py                  # Core logic, model caching, and batch processing functions
 ├── style.css                 # Premium custom theme and glassmorphism styling
 ├── complete_pipeline.joblib  # Trained Scikit-Learn model pipeline
-├── requirements.txt          # Python dependencies (Streamlit, Pandas, Scikit-Learn)
+├── requirements.txt          # Python dependencies (Streamlit, Pandas, Scikit-Learn, Mediapipe)
 ├── test_batch.csv            # Sample CSV file for testing Bulk Process functionality
+├── face_detection_new_api.py # Real-time Face Detection using MediaPipe Tasks API
+├── app1.ipynb                # Experimental Jupyter Notebook for data exploration
 ├── README.md                 # Project documentation
 └── .gitignore                # Git ignore rules
 ```
