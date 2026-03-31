@@ -1,0 +1,223 @@
+/* style.css */
+/* Dark Green Premium Theme */
+
+.stApp {
+    background-color: #0a120c; /* Very dark green-black background */
+    color: #e8f5e9; /* Light green-white text */
+}
+
+/* Base text elements */
+h1, h2, h3, h4, h5, h6, p, span, li {
+    color: #e8f5e9 !important;
+}
+
+/* Titles and Headers */
+.title {
+    text-align: center;
+    color: #4caf50 !important; /* Emphatic green */
+    padding: 20px 0 10px 0;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a5d6a7 !important;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Result Box Glassmorphism */
+.result-box {
+    background: rgba(46, 125, 50, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(76, 175, 80, 0.25);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    margin: 1.5rem 0;
+}
+
+/* Emotion Cards */
+.emotion-card {
+    background: linear-gradient(145deg, rgba(27, 94, 32, 0.5), rgba(13, 26, 17, 0.9));
+    padding: 20px 10px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+}
+
+.emotion-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(76, 175, 80, 0.25);
+    border-color: #4caf50;
+}
+
+.emotion-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+}
+
+.emotion-card strong {
+    color: #c8e6c9 !important;
+    font-size: 1.15rem;
+    display: block;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.emotion-prob {
+    font-size: 1.9rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Progress bars override */
+.stProgress > div > div > div > div {
+    background-color: #4caf50;
+    border-radius: 4px;
+}
+
+.stProgress > div > div {
+    background-color: rgba(27, 94, 32, 0.3);
+    border-radius: 4px;
+}
+
+/* Text area styling */
+.stTextArea textarea {
+    background-color: #122116 !important;
+    color: #e8f5e9 !important;
+    border: 1px solid #2e7d32 !important;
+    border-radius: 10px !important;
+    padding: 15px !important;
+    font-size: 1.05rem !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #4caf50 !important;
+    box-shadow: 0 0 0 1px #4caf50 !important;
+}
+
+/* Replace default streamlit buttons with green */
+.stButton button[kind="primary"] {
+    background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    font-weight: 600 !important;
+    padding: 0.6rem 2.5rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stButton button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%) !important;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4) !important;
+    transform: translateY(-2px);
+}
+
+.stButton button[kind="secondary"] {
+    background: rgba(46, 125, 50, 0.15) !important;
+    color: #a5d6a7 !important;
+    border: 1px solid #4caf50 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+}
+
+.stButton button[kind="secondary"]:hover {
+    background: rgba(46, 125, 50, 0.3) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2) !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #081009 !important;
+    border-right: 1px solid #1b3323 !important;
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: transparent;
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #81c784 !important;
+    background-color: rgba(46, 125, 50, 0.05);
+    border-radius: 10px 10px 0 0;
+    border: 1px solid transparent;
+    border-bottom: none;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: rgba(46, 125, 50, 0.15);
+    color: #a5d6a7 !important;
+}
+
+.stTabs [aria-selected="true"] {
+    color: white !important;
+    background-color: rgba(46, 125, 50, 0.25);
+    border-color: #2e7d32;
+    border-bottom: 2px solid #4caf50;
+}
+
+/* History tab specific styling */
+.history-item {
+    background: rgba(27, 94, 32, 0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-left: 5px solid #4caf50;
+    transition: transform 0.2s ease;
+}
+
+.history-item:hover {
+    transform: translateX(4px);
+    background: rgba(27, 94, 32, 0.3);
+}
+
+.history-text {
+    font-style: italic;
+    color: #c8e6c9 !important;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+    padding-bottom: 10px;
+}
+
+.history-labels {
+    font-weight: 600;
+    color: #a5d6a7 !important;
+}
+
+/* DataFrame styling overrides */
+[data-testid="stDataFrame"] > div {
+    border: 1px solid #2e7d32;
+    border-radius: 10px;
+}
+
+/* Custom expander */
+.streamlit-expanderHeader {
+    background-color: rgba(46, 125, 50, 0.1) !important;
+    border-radius: 8px !important;
+    color: #a5d6a7 !important;
+    border: 1px solid rgba(76, 175, 80, 0.2) !important;
+}
+
+.streamlit-expanderContent {
+    border: 1px solid rgba(76, 175, 80, 0.2) !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+    background-color: rgba(13, 26, 17, 0.5) !important;
+}

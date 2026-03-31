@@ -47,3 +47,7 @@ Thumbs.db
 
 # Model files (optional - uncomment if you want to include model)
 # complete_pipeline.joblib
+
+# Testing / Temporary Data
+test_batch.csv
+*.csv
